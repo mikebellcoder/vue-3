@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+
+    mongodb:
+        labels: 
+            - vue-mongo
+        build:
+            context: ./docker/mongodb
+            dockerfile: local.docker
+        ports:
+        - "27017:27017"
+        environment:
+            MONGODB_ROOT_PASSWORD: "example"
+        volumes:
+        - "./mongo-data:/data/db"

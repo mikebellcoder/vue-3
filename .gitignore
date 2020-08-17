@@ -1,1 +1,4 @@
+# node modules
 vue-framework/node_modules
+# docker volumes
+mongo-data
